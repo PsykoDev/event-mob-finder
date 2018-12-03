@@ -22,10 +22,11 @@ module.exports = function EventMobFinder(mod) {
 
   mod.hook('S_DESPAWN_NPC', 3, event => {
     const id = event.gameId.low
-    mod.send('S_DESPAWN_DROPITEM', 4, {
-      gameId: { low: id, high: 0, unsigned: true }
-    })
-    if (npcs.includes(id))
+    if (npcs.includes(id)) {
+      mod.send('S_DESPAWN_DROPITEM', 4, {
+        gameId: { low: id, high: 0, unsigned: true }
+      })
       npcs = npcs.filter(npc => npc !== id)
+    }
   })
 }
