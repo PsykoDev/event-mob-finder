@@ -3,7 +3,7 @@ module.exports = function EventMobFinder(mod) {
 
   mod.hook('S_SPAWN_NPC', 10, event => {
     if (event.bySpawnEvent) {
-      const id = event.gameId.low
+      const id = Number(event.gameId)
       npcs.push(id)
       mod.send('S_SPAWN_DROPITEM', 6, {
         gameId: { low: id, high: 0, unsigned: true },
@@ -21,7 +21,7 @@ module.exports = function EventMobFinder(mod) {
   })
 
   mod.hook('S_DESPAWN_NPC', 3, event => {
-    const id = event.gameId.low
+    const id = Number(event.gameId)
     if (npcs.includes(id)) {
       mod.send('S_DESPAWN_DROPITEM', 4, {
         gameId: { low: id, high: 0, unsigned: true }
