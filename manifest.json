@@ -1,7 +1,7 @@
 {
 	"files": {
 		"index.js": "83ebfae1b2358c020fac3997bc1be2d7bbcab3f2620e7bd72edf1aafb446625d",
-		"module.json": "45449c4db51670361ce31d6e0cc5998727b73f1b75ba249264b23ed8f1c04837"
+		"module.json": "270ac63a45c6f6cf5ff93439b16449febaecd18abcf7b4c10d3181fdbaa6d18d"
 	},
 	"defs": {
 		"S_DESPAWN_DROPITEM": 4,

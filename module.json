@@ -4,5 +4,5 @@
 	"author": "valkyr1e / Sunpui",
 	"description": "Marks every event npc",
 	"version": "1.0",
-	"servers": ["https://raw.githubusercontent.com/valkyr1e-tera/Event-Mob-Finder/master/"]
+	"servers": ["https://raw.githubusercontent.com/valkyr1e-tera/event-mob-finder/master/"]
 }
