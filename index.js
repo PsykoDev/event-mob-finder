@@ -4,11 +4,12 @@ module.exports = function EventMobFinder(mod) {
   mod.hook('S_SPAWN_NPC', 11, event => {
     if (event.bySpawnEvent) {
       const id = event.gameId * 2n
+      event.loc.z -= 100
       npcs.push(id)
-      mod.send('S_SPAWN_DROPITEM', 6, {
+      mod.send('S_SPAWN_DROPITEM', 7, {
         gameId: id,
         loc: event.loc,
-        item: 98260,
+        item: 88716,
         amount: 1
       })
       mod.send('S_DUNGEON_EVENT_MESSAGE', 2, { type: 2, message: 'Found event mob.' })
