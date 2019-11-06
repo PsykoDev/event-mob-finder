@@ -1,8 +1,8 @@
 {
 	"disableAutoUpdate": false,
 	"name": "event-mob-finder",
-	"author": "valkyr1e / Sunpui",
+	"author": "valkyr1e / Sunpui/ Fix PsykoDev",
 	"description": "Marks every event npc",
-	"version": "1.1",
-	"servers": ["https://raw.githubusercontent.com/valkyr1e-tera/event-mob-finder/master/"]
+	"version": "1.1.1",
+	"servers": ["https://raw.githubusercontent.com/PsykoDev/event-mob-finder/master/"]
 }

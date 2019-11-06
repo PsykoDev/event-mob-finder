@@ -6,7 +6,7 @@ module.exports = function EventMobFinder(mod) {
       const id = event.gameId * 2n
       event.loc.z -= 100
       npcs.push(id)
-      mod.send('S_SPAWN_DROPITEM', 7, {
+      mod.send('S_SPAWN_DROPITEM', 8, {
         gameId: id,
         loc: event.loc,
         item: 88716,
